@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* 
+Reset */
+body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin:0 auto;
+  padding:0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+h2,p,ul,li{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+}
+
+q{
+  margin:0;
+  padding:0;
+}
+/* 
+Container */
+.container{
+  margin:0 auto;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:30px;
+}
+/* 
+Testimonials cards */
+.testimonials{
+  background-color: azure;
+  padding:30px 30px;
+  border-radius: 8px;
+}
+
+.testimonials:first-child{
+  grid-column: span 2;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position-x: 25rem;
+}
+
+.testimonials:nth-child(2n){
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonials:nth-child(3n){
+  grid-row: span 2;
+  background-color: hsl(0, 0%, 100%);
+}
+.testimonials:nth-child(4n){
+  background-color: hsl(0, 0%, 100%); 
+}
+.testimonials:last-child{
+  grid-column: span 2;
+  background-color: hsl(219, 29%, 14%); 
+}
+
+/* 
+Avatar */
+.avatar{
+  display:flex;
+  margin-bottom: 12px;
+  align-items: center;
+}
+.avatar-text{
+  display:flex;
+  flex-direction: column;
+}
+
+.avatar-image{
+  display:block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.purple{
+  border:2px solid hsl(263, 40%, 60%);
+}
+
+.avatar-image.white{
+  border:2px solid hsl(0, 0%, 81%);
+}
+
+/* 
+Avatar info */
+.avatar-name{
+  color:hsl(0, 0%, 100%);
+  font-size:0.9rem;
+}
+.avatar-name.gray{
+  color:hsl(219, 29%, 14%);
+}
+
+.avatar-verified{
+  color:hsl(0, 0%, 81%);
+  font-size:0.65rem;
+  margin-top:2px;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+/* 
+Avatar testimonial */
+.card-title{
+  margin-bottom: 20px;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+.card-title.white{
+  color:hsl(0, 0%, 100%);
+}
+
+.card-title.gray{
+  color:hsl(217, 19%, 35%);
+}
+
+.card-quote{
+  color:hsl(0, 0%, 81%);
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.card-quote.gray{
+  color:hsl(217, 19%, 35%)
+}
+/* 
+Media queries */
+@media(max-width:970px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 40px 20px;
+  }
+  .testimonials:nth-child(4n){
+    order:3;
+  }
+}
+
+
