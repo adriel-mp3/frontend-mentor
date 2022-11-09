@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* 
+Reset and bg */
+h1,h2,p,a,body{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+img{
+  display: block;
+  max-width: 100%;
+  margin:0;
+  padding:0;
+}
+
+a{
+  display: block;
+}
+
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image:url('./src/images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:top;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 
+Container*/
+.container{
+  margin:0 auto;
+  width: 450px;
+  background-color: hsl(0,0%,100%);
+  border-radius: 12px;
+  box-shadow: rgba(31,47,86, 0.25) 0px 25px 50px -12px;
+}
+.container .hero-img{
+  border-radius: 12px 12px 0px 0px;
+}
+
+/* 
+Card text */
+.card-text{
+  padding:20px 50px;
+}
+.card-text h1{
+  font-weight: 900;
+  color:hsl(223, 47%, 23%);
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 1.8rem;
+}
+
+.card-text p{
+  font-weight:500;
+  font-size: 1rem;
+  color:hsl(224, 23%, 55%);
+  text-align: center;
+  line-height: 1.6;
+}
+/* 
+Card plan */
+.card-plan img{
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+.card-plan{
+  margin:0px 50px;
+  padding:25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:hsl(228,100%,98%);
+  border-radius: 10px; 
+}
+.card-plan-content{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-plan h2{
+  color:hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+.card-plan span{
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.card-plan a{
+  color:hsl(245, 75%, 52%);
+  text-decoration:underline;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 15px 0px;
+}
+.card-plan a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+  transition: ease-in-out 0.3s;
+}
+
+/* 
+Card payment button */
+.payment-button{
+text-align: center;
+color:hsl(225, 100%, 98%);
+font-weight: 700;
+font-size: 0.9rem;
+padding:14px 10px;
+background-color: hsl(245, 75%, 52%);
+margin:30px 50px;
+border-radius: 12px;  
+box-shadow: rgba(56, 41, 224, 0.19) 0px 10px 20px, rgba(56, 41, 224, 0.23) 0px 6px 6px;
+}
+.payment-button:hover{
+  background-color:hsl(245, 75%, 30%);
+  opacity: 0.8;
+  transition: ease-in-out 0.3s;
+}
+/* 
+Card cancel order button */
+.cancel-button{
+  text-align: center;
+  color:hsl(224, 23%, 55%);
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin:10px 70px;
+  margin-bottom: 50px;
+}
+.cancel-button:hover{
+  color:hsl(223, 47%, 23%);
+  transition: ease-in-out 0.3s;
+}
+
+/* Media queries */
+@media(max-width:450px){
+  body{
+    background-image: url('./src/images/pattern-background-mobile.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  
+  .container{
+    width: 400px;
+  }
+}
+@media(max-width:375px){
+  .card-plan-content img{
+    display:none;
+  }
+}
+
+
+
