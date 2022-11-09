@@ -9,4 +9,4 @@ Site: https://www.frontendmentor.io/
 - [X] Testimonials grid section 
 - [X] Three column preview card component
 - [X] Four card feature section
-- [ ] building...
+- [X] Order Summary Card
