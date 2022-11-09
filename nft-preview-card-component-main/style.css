@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Reset style */
+body{
+  margin:0 auto;
+  padding:0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color:hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+h1,p,span,img,a{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+
+/* 
+Container */
+.container{
+  width: 300px;
+  margin:0 auto;
+  background-color:hsl(216, 50%, 16%);
+  padding:24px;
+  border-radius: 18px;
+  box-shadow:1px 5px 36px 5px rgba(0,0,0,0.33);
+}
+/* 
+Card image*/
+.card-image{
+  width: 100%;
+  height: 100%;
+  display:block;
+  /* overflow: hidden; */
+}
+
+.card-image-eth{
+  background-image: url('./images/image-equilibrium.jpg');
+  height: 300px;
+  border-radius: 8px;
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-image-eth:hover {
+background-image: url('./images/image-equilibrium-hover.png');
+opacity: 1;
+cursor:pointer;
+transition: ease-in-out 0.3s;
+}
+
+/* 
+Card text */
+.card-text{
+  margin-top: 30px;
+}
+
+
+.card-text h1{
+  color:hsl(0, 0%, 100%);
+  font-weight:600; 
+}
+
+.card-text h1:hover{
+  color:hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.card-text p{
+  color:hsl(215, 51%, 70%);
+  font-weight: 300;
+  width: 29ch;
+  line-height: 1.5;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+/* 
+Card info */
+.card-info{
+  display:flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.card-info-eth img{
+  margin-right: 5px;
+}
+.card-info-eth{
+  display: flex;
+  align-items: center;
+  color:hsl(178, 100%, 50%);
+  font-size:1rem;
+  font-weight: 600;
+}
+.card-info-days img{
+  margin-right: 5px;
+}
+.card-info-days{
+  display:flex;
+  color:hsl(215, 51%, 70%);
+}
+/* 
+Card Author */
+.card-author{
+  display:flex;
+  align-items: center;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  margin: 10px 0px;
+}
+
+.card-author img{
+  width: 30px;
+  border:1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.card-author p{
+  margin-top: 20px;
+  color:hsl(215, 51%, 70%);
+}
+
+.author{
+  color:white;
+}
+
+.author:hover{
+  color:hsl(178, 100%, 50%);
+  transition: ease-in-out 0.3s;
+}
+
