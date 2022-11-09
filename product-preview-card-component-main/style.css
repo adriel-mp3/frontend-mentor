@@ -1,0 +1,193 @@
+/* Imports, reset and styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* 
+Reset */
+body {
+  background-color: hsl(30, 38%, 92%);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+}
+
+h1,p,span,li,ul,a{
+  margin:0;
+  padding:0;
+  list-style: none;
+  color:black;
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  display: block;  
+}
+picture img,source{
+  object-fit: cover;
+  object-position: center top;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+/* 
+Container style */
+.container{
+  display:grid;
+  width:600px;
+  grid-template-columns: 1fr 1fr;
+}
+/* 
+Card style */
+.card{
+  padding:25px 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 10px 10px 0px;
+}
+
+.card-text span{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  font-size: .8rem;
+  color:hsl(228, 12%, 48%);
+}
+
+.card-text h1{
+  color:hsl(212, 21%, 14%);
+  font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+  line-height: 1;
+  margin-top:15px;
+  font-size: 1.8rem;
+}
+.card-text p{
+  margin-top:25px;
+  color:hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size:0.9rem;
+  max-width: 25ch;
+  line-height:1.6;
+  font-weight: 400;
+}
+
+/* 
+Card price */
+.card-price{
+  display:flex;
+  align-items: center;
+}
+.card-price > li:first-child{
+  color:hsl(158, 36%, 37%);
+  font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-right:17px;
+}
+.card-price > li:last-child{
+  color:hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration:line-through;
+  font-size: 0.8rem;
+}
+
+/* 
+Card button */
+.card-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:15px;
+  background-color:hsl(158, 36%, 37%);
+  border-radius: 8px;
+}
+
+.card-button img{
+  margin-right: 10px;
+}
+
+.card-button a{
+  color:hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size:0.9rem;
+}
+
+/* 
+Responsive */
+@media (max-width:500px){
+  .container{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  width: 400px;
+  margin:10px 10px;
+  align-items: start;
+  
+ }
+ picture img{
+  border-radius:10px 10px 0px 0px;
+ }
+
+ br{
+  display: none;
+ }
+ 
+ .card{
+  grid-row: 2/3;
+  border-radius: 0px 0px 10px 10px;
+}
+.card-text span{
+  font-size: .8rem;
+  letter-spacing: .4rem;
+}
+.card-text h1{
+  font-size: 2.5rem;
+}
+.card-text p{
+  margin-top: 20px;
+  font-size: 1rem;
+  max-width: 32ch;
+}
+.card-price{
+  margin-top: 20px;
+}
+.card-button{
+  margin-top: 20px;
+}
+}
+
+
+@media (max-width:375px){
+  .card-text h1{
+    font-size: 2.2rem;
+  }
+  .card-text p{
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  .card-price{
+    margin-top:10px;
+    font-size: .9rem;
+  }
+  .card-button{
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
