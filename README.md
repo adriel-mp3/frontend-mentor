@@ -1,5 +1,6 @@
 # Desafios do Frontend Mentor
-Site: https://www.frontendmentor.io/
+
+## Desafios:
 
 - [x] QR code component 
 - [x] Order summary component 
@@ -11,3 +12,5 @@ Site: https://www.frontendmentor.io/
 - [X] Four card feature section
 - [X] Order Summary Card
 - [ ] Building...
+
+Foram desafios propostos pelo Frontend Mentor, realizar cada desáfio desses foi de extrema importância para nivelar meus conhecimentos.
