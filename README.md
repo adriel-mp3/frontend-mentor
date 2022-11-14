@@ -13,4 +13,4 @@
 - [X] Order Summary Card
 - [ ] Building...
 
-Foram desafios propostos pelo Frontend Mentor, realizar cada desáfio desses foi de extrema importância para nivelar meus conhecimentos.
+Foram desafios propostos pelo Frontend Mentor, realizar cada desafio desses foi de extrema importância para nivelar meus conhecimentos.
